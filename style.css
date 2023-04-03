@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+body {
+	background-color: hsl(233, 47%, 7%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.main-box {
+	margin: 20px;
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 8px;
+	overflow: hidden;
+	max-width: 400px;
+}
+
+.wrapper {
+	margin-left: 24px;
+	margin-right: 24px;
+	font-family: "Inter", sans-serif;
+}
+.title {
+	color: hsl(0, 0%, 100%);
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 34px;
+	font-weight: 700;
+}
+.insights {
+	color: hsl(277, 64%, 61%);
+}
+.description {
+	text-align: center;
+	color: hsla(0, 0%, 100%, 0.6);
+	font-size: 14px;
+	margin-top: 18px;
+	font-weight: 400;
+}
+.companies-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: hsl(0, 0%, 100%);
+	margin-top: 20px;
+
+	font-family: "Inter", sans-serif;
+	text-transform: uppercase;
+}
+.companies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+.templates {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.queries {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.companies-word {
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 12px;
+	color: hsla(0, 0%, 100%, 0.6);
+	font-weight: 400;
+}
+.templates-word {
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 12px;
+	color: hsla(0, 0%, 100%, 0.6);
+	font-weight: 400;
+}
+.queries-word {
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 12px;
+	color: hsla(0, 0%, 100%, 0.6);
+	font-weight: 400;
+}
+.image-desktop {
+	display: none;
+}
+
+@media (min-width: 1000px) {
+	.image-mobile {
+		display: none;
+	}
+	.image-desktop {
+		display: block;
+		max-width: 50%;
+	}
+	.main-box {
+		display: flex;
+		max-width: 800px;
+	}
+	.companies-wrapper {
+		flex-direction: row;
+		margin-left: 24px;
+		justify-content: space-between;
+		margin-right: 42px;
+	}
+	.title {
+		text-align: left;
+	}
+	.description {
+		text-align: left;
+	}
+	.companies {
+		margin-top: 0px;
+	}
+	.templates {
+		margin-top: 0px;
+	}
+
+	.text-wrapper {
+		margin: 20px 10px 0 20px;
+	}
+}
