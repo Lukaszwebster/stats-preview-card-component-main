@@ -16,7 +16,6 @@ body {
 	overflow: hidden;
 	max-width: 400px;
 }
-
 .wrapper {
 	margin-left: 24px;
 	margin-right: 24px;
@@ -96,14 +95,21 @@ body {
 .image-desktop {
 	display: none;
 }
-
+.image-mobile {
+	opacity: 50%;
+}
+.img-overlay {
+	background-color: hsl(277, 64%, 61%);
+}
 @media (min-width: 1000px) {
 	.image-mobile {
 		display: none;
 	}
 	.image-desktop {
 		display: block;
-		max-width: 50%;
+		width: 800px;
+		height: 100%;
+		opacity: 50%;
 	}
 	.main-box {
 		display: flex;
@@ -127,7 +133,6 @@ body {
 	.templates {
 		margin-top: 0px;
 	}
-
 	.text-wrapper {
 		margin: 20px 10px 0 20px;
 	}

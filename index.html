@@ -3,27 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-
 		<title>Frontend Mentor | Stats preview card component</title>
-
 		<link rel="stylesheet" href="style.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<body>
 		<main class="main-box">
-			<img
-				class="image-mobile"
-				src="images/image-header-mobile.jpg"
-				alt=""
-			/>
+			<div class="img-overlay">
+				<img
+					class="image-mobile"
+					src="images/image-header-mobile.jpg"
+					alt=""
+				/>
+			</div>
 			<div class="text-wrapper">
 				<div class="wrapper">
 					<h1 class="title">
@@ -48,11 +46,13 @@
 					</div>
 				</div>
 			</div>
-			<img
-				class="image-desktop"
-				src="images/image-header-desktop.jpg"
-				alt=""
-			/>
+			<div class="img-overlay">
+				<img
+					class="image-desktop"
+					src="images/image-header-desktop.jpg"
+					alt=""
+				/>
+			</div>
 		</main>
 	</body>
 </html>
